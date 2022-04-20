@@ -1,0 +1,231 @@
+2022-04-19 04:33:30.219 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid datetime format
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:291)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:231)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:261)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 04:34:39.799 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid character value for cast
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:244)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid character value for cast
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:214)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid character value for cast
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.Scanner.convertToNumber(Unknown Source)
+	at org.hsqldb.types.NumberType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:18:27.334 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid datetime format
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:291)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:231)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:261)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:21:17.872 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid character value for cast
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:244)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid character value for cast
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:214)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid character value for cast
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.Scanner.convertToNumber(Unknown Source)
+	at org.hsqldb.types.NumberType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:21:26.583 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid character value for cast
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:244)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid character value for cast
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:214)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid character value for cast
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.Scanner.convertToNumber(Unknown Source)
+	at org.hsqldb.types.NumberType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:21:31.337 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid character value for cast
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:244)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:230)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid character value for cast
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchById(ProjektDAOImpl.java:214)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid character value for cast
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.Scanner.convertToNumber(Unknown Source)
+	at org.hsqldb.types.NumberType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:21:35.515 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid datetime format
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:291)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:231)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:261)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:21:40.261 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(248) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid datetime format
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:291)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:231)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:261)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:46:55.610 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(264) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid datetime format
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:291)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:246)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:261)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:47:21.944 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(264) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid datetime format
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:291)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:246)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:261)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 8 common frames omitted
+2022-04-19 23:47:59.680 [pool-2-thread-1] ERROR c.p.controller.ProjectController.lambda$4(264) - B³¹d podczas pobierania listy projektów! ({})
+java.lang.RuntimeException: java.sql.SQLDataException: data exception: invalid datetime format
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:291)
+	at com.project.controller.ProjectController.lambda$4(ProjectController.java:246)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLDataException: data exception: invalid datetime format
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setParameter(Unknown Source)
+	at org.hsqldb.jdbc.JDBCPreparedStatement.setString(Unknown Source)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java)
+	at com.project.dao.ProjektDAOImpl.searchByDate(ProjektDAOImpl.java:261)
+	... 4 common frames omitted
+Caused by: org.hsqldb.HsqlException: data exception: invalid datetime format
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToDatetimeSpecial(Unknown Source)
+	at org.hsqldb.types.DateTimeType.convertToType(Unknown Source)
+	... 8 common frames omitted
